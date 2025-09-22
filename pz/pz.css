@@ -1,0 +1,175 @@
+/* 🌌 Общие стили */
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    animation: fadeIn 1s ease-in-out;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #00c6ff;
+}
+
+/* (удалено ошибочное правило h1 header) */
+
+header p {
+    margin: 8px 0 0;
+    font-size: 1rem;
+    color: #ccc;
+}
+
+/* 🚀 Навигация (твой базовый вариант, оставил) */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 15px 0;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(5px);
+}
+nav ul li { margin: 0 15px; }
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+nav ul li a:hover {
+    background: #00c6ff;
+    color: #000;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 198, 255, 0.6);
+}
+
+/* 📖 Основной контент */
+main {
+    padding: 30px;
+    text-align: center;
+    animation: fadeUp 1s ease-in-out;
+}
+main h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #00eaff;
+    text-shadow: 0 0 12px rgba(0, 234, 255, 0.7);
+}
+
+/* 📊 Таблица (как у тебя) */
+.schedule-container { overflow-x: auto; margin-top: 20px; }
+.schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 198, 255, 0.2);
+}
+.schedule-table th,
+.schedule-table td {
+    padding: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+    vertical-align: top;
+}
+.schedule-table th {
+    background: rgba(0, 198, 255, 0.2);
+    color: #00eaff;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+/* 🎓 Типи занять */
+.lecture { background: rgba(0,160,255,.15); border-radius: 8px; margin-bottom: 6px; padding: 6px; }
+.practice{ background: rgba(0,255,160,.15); border-radius: 8px; margin-bottom: 6px; padding: 6px; }
+.lab     { background: rgba(255,200,0,.15); border-radius: 8px; margin-bottom: 6px; padding: 6px; }
+.empty   { color: #888; font-style: italic; }
+
+/* 🏷️ Легенда */
+.legend {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+.badge { padding: 6px 12px; border-radius: 6px; font-weight: bold; }
+.badge-lecture { background: rgba(0,160,255,.25); border:1px solid rgba(0,160,255,.6); }
+.badge-practice{ background: rgba(0,255,160,.25); border:1px solid rgba(0,255,160,.6); }
+.badge-lab     { background: rgba(255,200,0,.25); border:1px solid rgba(255,200,0,.6); }
+
+/* 📌 Подвал */
+footer {
+    margin-top: 30px;
+    padding: 15px;
+    text-align: center;
+    font-size: 0.9rem;
+    background: rgba(0, 0, 0, 0.6);
+    border-top: 2px solid #00c6ff;
+    color: #ccc;
+}
+
+/* ✨ Анимации */
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes fadeUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+
+/* ───────────────────────────────────────────────────────────── */
+/* ✅ ДОБАВЛЕНО НОВОЕ (ТОЛЬКО ТО, О ЧЁМ ДОГОВАРИВАЛИСЬ) */
+
+/* 1) Новое меню .topnav (для index + подпапок) */
+nav.topnav { position: sticky; top: 0; z-index: 1000; }
+nav.topnav ul {
+  display: flex; justify-content: center; gap: 16px;
+  list-style: none; margin: 0; padding: 12px 0;
+  background: rgba(255,255,255,.05);
+  border-top: 2px solid #00c6ff;
+  border-bottom: 1px solid rgba(255,255,255,.06);
+  backdrop-filter: blur(5px);
+}
+nav.topnav a{
+  position: relative;
+  color:#fff; text-decoration:none; padding:8px 14px;
+  border-radius:8px; font-weight:700; transition:.25s;
+}
+nav.topnav a:hover{
+  background:#00c6ff; color:#000; transform:translateY(-2px);
+  box-shadow:0 4px 15px rgba(0,198,255,.6);
+}
+nav.topnav a::after{
+  content:""; position:absolute; left:0; right:0; bottom:-7px; height:3px;
+  background:#00eaff; border-radius:3px; transform:scaleX(0);
+  transition: transform .25s ease; box-shadow:0 0 10px #00eaff7a;
+}
+nav.topnav a:hover::after,
+nav.topnav a.active::after { transform: scaleX(1); }
+
+/* 2) Видимые ссылки-карточки для списка ПЗ (в p/ul) */
+.link-card,
+.link-card:visited {
+  display: inline-block;
+  color: #00eaff;
+  text-decoration: none;
+  padding: 12px 16px;
+  border: 1px solid rgba(0, 198, 255, 0.6);
+  border-radius: 12px;
+  background: rgba(255,255,255,0.05);
+  box-shadow: 0 0 14px rgba(0,198,255,0.2);
+  transition: transform .2s ease, box-shadow .2s ease,
+             background .2s ease, border-color .2s ease, color .2s ease;
+}
+.link-card:hover {
+  transform: translateY(-2px);
+  background: rgba(0,198,255,0.12);
+  border-color: #00eaff;
+  box-shadow: 0 8px 22px rgba(0,198,255,0.28);
+  color: #00161c;
+}

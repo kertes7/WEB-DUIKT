@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Лабораторна №1 — Основи HTML</title>
+  <link rel="stylesheet" href="labs.css"/>
+</head>
+<body>
+
+  <header>
+    <h1>Лабораторна робота №1 — Основи HTML</h1>
+    <p>Форма реєстрації з обов’язковими полями</p>
+  </header>
+
+  <nav class="topnav">
+    <ul>
+      <li><a href="../index.html">Головна</a></li>
+      <li><a href="../about/index.html">Про мене</a></li>
+      <li><a href="../pz/index.html">Практичні</a></li>
+      <li><a href="index.html" class="active">Лабораторні</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h2>Реєстраційна форма</h2>
+
+    <section class="form-wrap">
+      <!-- ✅ action виставлений на webhook.site (приклад).
+           Можеш замінити id на свій без зміни верстки -->
+      <form
+        class="form-card"
+        action="https://webhook.site/63902666-cb9b-484c-a752-20bea276b697"
+        method="post"
+        target="_blank"
+      >
+        <!-- a) Ім'я -->
+        <div class="form-row">
+          <label for="first_name">Ім’я</label>
+          <input id="first_name" name="first_name" type="text" required placeholder="Іван" />
+        </div>
+
+        <!-- b) Прізвище -->
+        <div class="form-row">
+          <label for="last_name">Прізвище</label>
+          <input id="last_name" name="last_name" type="text" required placeholder="Гнетило" />
+        </div>
+
+        <!-- c) Email -->
+        <div class="form-row">
+          <label for="email">E-mail</label>
+          <input id="email" name="email" type="email" required placeholder="name@example.com" />
+        </div>
+
+        <!-- d) Пароль -->
+        <div class="form-row">
+          <label for="password">Пароль</label>
+          <input id="password" name="password" type="password" required />
+        </div>
+
+        <!-- e) Підтвердження паролю -->
+        <div class="form-row">
+          <label for="password_confirm">Підтвердження паролю</label>
+          <input id="password_confirm" name="password_confirm" type="password" required />
+        </div>
+
+        <!-- g) Дата народження -->
+        <div class="form-row">
+          <label for="birth_date">Дата народження</label>
+          <input id="birth_date" name="birth_date" type="date" />
+        </div>
+
+        <!-- g) Стать -->
+        <div class="form-row">
+          <label for="gender">Стать</label>
+          <select id="gender" name="gender">
+            <option value="" selected>— оберіть —</option>
+            <option value="male">Чоловіча</option>
+            <option value="female">Жіноча</option>
+            <option value="other">Інше</option>
+          </select>
+        </div>
+
+        <!-- f) Надіслати -->
+        <div class="form-actions">
+          <input type="submit" value="Надіслати" />
+        </div>
+      </form>
+
+    
+    </section>
+  </main>
+
+  <footer>
+    © 2025 Гнетило Іван
+  </footer>
+
+</body>
+</html>

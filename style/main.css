@@ -1,14 +1,13 @@
-/* 🌌 Общие стили */
+/* 🌌 Загальні стилі */
 body {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
     color: #fff;
     margin: 0;
-    padding: 0;
     line-height: 1.6;
-    animation: fadeIn 1s ease-in-out;
 }
 
+/* 🏷️ Шапка */
 header {
     background: rgba(0, 0, 0, 0.7);
     padding: 20px;
@@ -17,139 +16,46 @@ header {
 }
 
 header h1 {
-    font-size: 2rem;
-    letter-spacing: 2px;
+    margin: 0;
     color: #00c6ff;
-    text-shadow: 0 0 10px #00c6ff, 0 0 20px #0072ff;
 }
 
-/* 🚀 Навигация */
+/* 🚀 Навігація */
 nav ul {
     display: flex;
     justify-content: center;
+    gap: 16px;
     list-style: none;
     margin: 0;
-    padding: 15px 0;
+    padding: 12px 0;
     background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(5px);
 }
 
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    font-weight: bold;
+nav a {
     color: #fff;
-    padding: 8px 15px;
+    text-decoration: none;
+    padding: 8px 14px;
     border-radius: 8px;
-    transition: all 0.3s ease;
+    transition: 0.25s;
 }
 
-nav ul li a:hover {
+nav a:hover {
     background: #00c6ff;
     color: #000;
     transform: translateY(-2px);
-    box-shadow: 0 4px 15px rgba(0, 198, 255, 0.6);
 }
 
-/* 📖 Основной контент */
+/* 📖 Основний контент */
 main {
-    padding: 30px;
+    padding: 28px;
     text-align: center;
-    animation: fadeUp 1s ease-in-out;
 }
 
-main h2 {
-    font-size: 1.8rem;
-    margin-bottom: 15px;
-    color: #00eaff;
-    text-shadow: 0 0 12px rgba(0, 234, 255, 0.7);
-}
-
-/* 📊 Таблица */
-.schedule-container {
-    overflow-x: auto;
-    margin-top: 20px;
-}
-
-.schedule-table {
-    width: 100%;
-    border-collapse: collapse;
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 0 15px rgba(0, 198, 255, 0.2);
-}
-
-/* Заголовки */
-.schedule-table th,
-.schedule-table td {
-    padding: 15px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    text-align: center;
-    animation: fadeRow 0.6s ease-in-out forwards;
-    opacity: 0;
-}
-
-/* Анимация строк поочерёдно */
-.schedule-table tbody tr:nth-child(1) td { animation-delay: 0.2s; }
-.schedule-table tbody tr:nth-child(2) td { animation-delay: 0.4s; }
-.schedule-table tbody tr:nth-child(3) td { animation-delay: 0.6s; }
-.schedule-table tbody tr:nth-child(4) td { animation-delay: 0.8s; }
-
-.schedule-table th {
-    background: rgba(0, 198, 255, 0.2);
-    color: #00eaff;
-    text-transform: uppercase;
-    font-size: 0.9rem;
-    letter-spacing: 1px;
-    text-shadow: 0 0 6px rgba(0, 234, 255, 0.6);
-}
-
-/* Ячейки с занятиями */
-.schedule-table td.lab {
-    background: rgba(0, 198, 255, 0.1);
-    transition: 0.3s;
-    cursor: pointer;
-}
-
-.schedule-table td.lab:hover {
-    background: rgba(0, 198, 255, 0.3);
-    transform: scale(1.05);
-    box-shadow: 0 0 15px rgba(0, 198, 255, 0.5);
-}
-
-/* Пустые ячейки */
-.schedule-table td.empty {
-    color: #888;
-    font-style: italic;
-}
-
-/* 📌 Подвал */
+/* 📌 Підвал */
 footer {
-    margin-top: 30px;
-    padding: 15px;
+    margin-top: 28px;
+    padding: 14px;
     text-align: center;
-    font-size: 0.9rem;
-    background: rgba(0, 0, 0, 0.6);
     border-top: 2px solid #00c6ff;
-    color: #ccc;
-}
-
-/* ✨ Анимации */
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-@keyframes fadeUp {
-    from { opacity: 0; transform: translateY(30px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes fadeRow {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
+    background: rgba(0, 0, 0, 0.6);
 }

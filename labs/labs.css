@@ -1,0 +1,170 @@
+/* 🌌 Загальні стилі */
+body{
+  font-family:"Segoe UI",Tahoma,Geneva,Verdana,sans-serif;
+  background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+  color:#fff; margin:0; line-height:1.6;
+  animation:fadeIn .6s ease-in-out;
+}
+
+/* 🏷️ Шапка */
+header{
+  background:rgba(0,0,0,.7);
+  padding:20px; text-align:center;
+  border-bottom:2px solid #00c6ff;
+}
+header h1{ margin:0; color:#00c6ff; }
+header p{ margin:8px 0 0; color:#ccc; }
+
+/* 🚀 Навігація (та сама логіка, що й на інших сторінках) */
+nav.topnav{ position:sticky; top:0; z-index:1000; }
+nav.topnav ul{
+  display:flex; justify-content:center; gap:16px;
+  list-style:none; margin:0; padding:12px 0;
+  background:rgba(255,255,255,.05);
+  border-top:2px solid #00c6ff;
+  border-bottom:1px solid rgba(255,255,255,.06);
+  backdrop-filter:blur(5px);
+}
+nav.topnav a{
+  position:relative;
+  color:#fff; text-decoration:none;
+  padding:8px 14px; border-radius:8px; font-weight:700;
+  transition:.25s;
+}
+nav.topnav a:hover{
+  background:#00c6ff; color:#000; transform:translateY(-2px);
+  box-shadow:0 4px 15px rgba(0,198,255,.6);
+}
+nav.topnav a::after{
+  content:""; position:absolute; left:0; right:0; bottom:-7px; height:3px;
+  background:#00eaff; border-radius:3px; transform:scaleX(0);
+  transition:transform .25s ease; box-shadow:0 0 10px #00eaff7a;
+}
+nav.topnav a:hover::after,
+nav.topnav a.active::after{ transform:scaleX(1); }
+
+/* 📖 Основний контент */
+main{ padding:28px 16px; text-align:center; animation:fadeUp .6s ease-in-out; }
+main h2{
+  font-size:1.9rem; margin:10px 0 14px; font-weight:800; color:#00c6ff;
+}
+
+/* 🔗 Посилання-картки (пом’якшений відтінок, як просив) */
+.link-card, .link-card:visited{
+  display:inline-block; color:#7ee8ff; /* трохи світліше */
+  text-decoration:none;
+  padding:12px 16px;
+  border:1px solid rgba(0,220,255,.65);
+  border-radius:12px;
+  background:rgba(255,255,255,.06);
+  box-shadow:0 0 14px rgba(0,198,255,.2);
+  transition: transform .2s ease, box-shadow .2s ease,
+             background .2s ease, border-color .2s ease, color .2s ease;
+}
+.link-card:hover{
+  transform:translateY(-2px);
+  background:linear-gradient(135deg,#00eaff33,#00c6ff33);
+  border-color:#00eaff;
+  box-shadow:0 8px 22px rgba(0,198,255,.28);
+  color:#00161c;
+}
+
+/* м’який колір звичайних посилань (підказки тощо) */
+.soft-link, .soft-link:visited{ color:#7ee8ff; text-decoration:underline; }
+
+/* 🧾 Форма (Лаба №1) */
+.form-wrap{ max-width:720px; margin:0 auto; }
+.form-card{
+  width:100%; max-width:520px; margin:16px auto;
+  padding:20px 18px;
+  background:rgba(255,255,255,.05);
+  border:1px solid rgba(0,198,255,.55);
+  border-radius:14px;
+  box-shadow:0 0 16px rgba(0,198,255,.18);
+  text-align:left;
+}
+.form-row{ display:flex; flex-direction:column; gap:6px; margin-bottom:14px; }
+.form-row label{ font-weight:700; color:#dff7ff; }
+.form-row input,
+.form-row select{
+  width:100%;
+  padding:10px 12px;
+  border:1px solid rgba(255,255,255,.35);
+  border-radius:10px;
+  background:rgba(0,0,0,.25);
+  color:#eaf9ff;
+  outline:none;
+  transition:border-color .2s ease, box-shadow .2s ease, background .2s ease;
+}
+.form-row input::placeholder{ color:#a8c7cf; }
+.form-row input:focus,
+.form-row select:focus{
+  border-color:#00eaff;
+  box-shadow:0 0 0 3px rgba(0,234,255,.2);
+  background:rgba(0,0,0,.35);
+}
+
+.form-actions{ text-align:center; margin-top:10px; }
+.form-actions input[type="submit"]{
+  cursor:pointer;
+  padding:10px 18px;
+  border:1px solid #00c6ff;
+  border-radius:10px;
+  background:linear-gradient(135deg,#00eaff,#00c6ff);
+  color:#00161c; font-weight:800;
+  transition: transform .15s ease, box-shadow .2s ease, filter .2s ease;
+}
+.form-actions input[type="submit"]:hover{
+  transform:translateY(-1px);
+  box-shadow:0 8px 22px rgba(0,198,255,.35);
+  filter:saturate(1.05);
+}
+
+.hint{ margin:10px 0 0; color:#cfe3ea; font-size:.95rem; text-align:center; }
+
+/* 📌 Підвал */
+footer{
+  margin-top:28px; padding:14px; text-align:center;
+  border-top:2px solid #00c6ff; background:rgba(0,0,0,.6);
+  color:#cfe3ea; font-size:.92rem;
+}
+
+/* ✨ Анімації */
+@keyframes fadeIn{ from{opacity:0} to{opacity:1} }
+@keyframes fadeUp{ from{opacity:0; transform:translateY(30px)} to{opacity:1; transform:none} }
+
+
+/* --- FIX: акуратне центрування і підрівнювання --- */
+
+/* центруємо контент сторінки і не даємо йому «розповзатися» */
+main{
+  max-width: 980px;
+  margin: 0 auto;           /* центр по горизонталі */
+  padding-left: 16px;       /* трохи «повітря» з боків */
+  padding-right: 16px;
+}
+
+/* обгортка форми завжди чітко по центру */
+.form-wrap{
+  max-width: 640px;         /* трохи компактніше, щоб окомірно було рівно */
+  margin: 0 auto;           /* центр */
+  padding: 0 12px;          /* анти-«прилипання» до краю */
+}
+
+/* картка форми не «вилазить» за ширину обгортки */
+.form-card{
+  width: 100%;
+  margin: 18px auto 0;
+  box-sizing: border-box;   /* щоб бордер/падінги не зсували ширину */
+}
+
+/* поля завжди 100% ширини картки, без переповнення */
+.form-row input,
+.form-row select{
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* легке підрівнювання underline в меню (щоб не з’їжджало) */
+nav.topnav ul{ padding: 13px 0; }
+nav.topnav a::after{ bottom: -5px; }

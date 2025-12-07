@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Портфоліо — Головна</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Кастомні шрифти під портфоліо -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style/main.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <span class="logo-mark">IG</span>
+        <span class="logo-text">Ivan Hnetylo</span>
+      </div>
+
+      <nav class="topnav">
+        <ul>
+          <li><a href="index.html" class="active">Головна</a></li>
+          <li><a href="about/index.html">Про мене</a></li>
+          <li><a href="pz/index.html">Практичні</a></li>
+          <li><a href="labs/index.html">Лабораторні</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="hero" id="home">
+      <div class="hero-text">
+        <p class="hero-kicker">Front-end • Student • Developer</p>
+        <h1 class="hero-title">Привіт, я Іван. Створюю навчальні проєкти та веб-інтерфейси.</h1>
+        <p class="hero-subtitle">
+          Цей сайт — моє невелике портфоліо. Тут зібрані лабораторні, практичні роботи
+          та сторінка «Про мене».
+        </p>
+
+        <div class="hero-actions">
+          <a href="labs/index.html" class="btn primary">Перейти до лабораторних</a>
+          <a href="pz/index.html" class="btn ghost">Практичні роботи</a>
+        </div>
+
+        <div class="hero-tags">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS / Flex / Grid</span>
+          <span class="tag">Portfolio UI</span>
+        </div>
+      </div>
+
+      <div class="hero-photo">
+        <div class="photo-card">
+          <div class="photo-circle"></div>
+          <div class="photo-info">
+            <p class="photo-name">Іван Гнетило</p>
+            <p class="photo-role">Web-розробка • ДУІКТ</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sections-grid">
+      <article class="section-card">
+        <h2>Про мене</h2>
+        <p>Коротка інформація про мене, освіту та інтереси в ІТ.</p>
+        <a href="about/index.html" class="card-link">Відкрити розділ</a>
+      </article>
+
+      <article class="section-card">
+        <h2>Практичні роботи</h2>
+        <p>Завдання з курсу веб-розробки: селектори, Flexbox, верстка.</p>
+        <a href="pz/index.html" class="card-link">Перейти до списку</a>
+      </article>
+
+      <article class="section-card">
+        <h2>Лабораторні</h2>
+        <p>Більш комплексні роботи: форми, планери, клавіатура, портфоліо.</p>
+        <a href="labs/index.html" class="card-link">Переглянути лабораторні</a>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© 2025 Гнетило Іван. Навчальний проєкт.</span>
+    </div>
+  </footer>
+
+  <!-- Фіксоване посилання на Figma-шаблон (вимога ЛР5) -->
+  <a
+    class="figma-fixed-link"
+    href="https://www.figma.com/design/gKZoWoleFgP35xvYu83Y2l/Portfolio-UI---Web---Mobile?node-id=0-1"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Figma template
+  </a>
+</body>
+</html>

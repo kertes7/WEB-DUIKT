@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Практична робота №1 — Зведений розклад на вересень 2025</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="pz.css">
+</head>
+<body>
+  <header>
+    <h1>Практична робота №1</h1>
+    <p>Зведений розклад занять на вересень 2025 (ТЦР-21)</p>
+  </header>
+
+ <!-- пример для /pz/index.html -->
+<nav class="topnav">
+  <ul>
+    <li><a href="../index.html">Головна</a></li>
+    <li><a href="../about/index.html">Про мене</a></li>
+    <li><a href="index.html" class="active">Практичні</a></li>
+    <li><a href="../labs/index.html">Лабораторні</a></li>
+  </ul>
+</nav>
+
+
+  <main>
+    <div class="legend">
+      <span class="badge badge-lecture">Лк — лекція</span>
+      <span class="badge badge-practice">Пз — практичне</span>
+      <span class="badge badge-lab">Лб — лабораторне</span>
+    </div>
+
+    <div class="schedule-container">
+      <table class="schedule-table unified">
+        <thead>
+          <tr>
+            <th>Дата</th>
+            <th>9:45–11:20</th>
+            <th>11:45–13:20</th>
+            <th>13:30–15:05</th>
+            <th>15:15–16:50</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- 01.09 (ЛЕКЦІЇ) -->
+          <tr>
+            <td class="date">01.09</td>
+            <td>
+              <div class="pill lecture"><b>Вища математика</b> (Лк)<br><span class="muted">Дистанційно · Білоусова С.В.</span></div>
+            </td>
+            <td>
+              <div class="pill lecture"><b>Інноваційне підприємництво</b> (Лк)<br><span class="muted">Дистанційно · Бажан Т.О.</span></div>
+            </td>
+            <td>
+              <div class="pill lecture"><b>WEB-технології</b> (Лк)<br><span class="muted">Дистанційно · Дзюба В.В.</span></div>
+            </td>
+            <td class="empty"></td>
+          </tr>
+
+          <!-- 02.09 (ПРАКТИЧНІ) -->
+          <tr>
+            <td class="date">02.09</td>
+            <td>
+              <div class="pill practice"><b>Інноваційне підприємництво</b> (Пз)<br><span class="muted">ауд. 329 · Бажан Т.О.</span></div>
+            </td>
+            <td>
+              <div class="pill practice"><b>Вища математика</b> (Пз)<br><span class="muted">ауд. 501 · Варшамов А.В.</span></div>
+            </td>
+            <td>
+              <div class="pill practice"><b>Іноземна мова</b> (Пз)<br><span class="muted">ауд. 329 · Донцова О.С.</span></div>
+            </td>
+            <td class="empty"></td>
+          </tr>
+
+          <!-- 08.09 (ЛЕКЦІЇ) -->
+          <tr>
+            <td class="date">08.09</td>
+            <td><div class="pill lecture"><b>ООП</b> (Лк)<br><span class="muted">Дистанційно · Чернявський Ж.А.</span></div></td>
+            <td><div class="pill lecture"><b>Аналіз вимог до ПЗ</b> (Лк)<br><span class="muted">Дистанційно · Сватко В.В.</span></div></td>
+            <td><div class="pill lecture"><b>Українська мова</b> (Лк)<br><span class="muted">Дистанційно · Даниленко Л.В.</span></div></td>
+            <td><div class="pill lecture"><b>Філософія</b> (Лк)<br><span class="muted">Дистанційно</span></div></td>
+          </tr>
+
+          <!-- 09.09 (ПРАКТИЧНІ + ЛАБИ одночасно) -->
+          <tr>
+            <td class="date">09.09</td>
+            <td>
+              <div class="pill practice"><b>Інноваційне підприємництво</b> (Пз)<br><span class="muted">ауд. 329 · Бажан Т.О.</span></div>
+              <div class="pill lab"><b>Інноваційне підприємництво</b> (Лб)<br><span class="muted">ауд. 201 · Бажан Т.О.</span></div>
+            </td>
+            <td>
+              <div class="pill practice"><b>Вища математика</b> (Пз)<br><span class="muted">ауд. 501 · Варшамов А.В.</span></div>
+            </td>
+            <td>
+              <div class="pill practice"><b>Іноземна мова</b> (Пз)<br><span class="muted">ауд. 329 · Донцова О.С.</span></div>
+            </td>
+            <td class="empty"></td>
+          </tr>
+
+          <!-- 10.09 (ЛАБИ) -->
+          <tr>
+            <td class="date">10.09</td>
+            <td class="empty"></td>
+            <td><div class="pill lab"><b>WEB-технології</b> (Лб)<br><span class="muted">ауд. 211 · Дзюба В.В.</span></div></td>
+            <td><div class="pill lab"><b>Вища математика</b> (Лб)<br><span class="muted">ауд. 517 · Шкапа В.В.</span></div></td>
+            <td class="empty"></td>
+          </tr>
+
+          <!-- 12.09 (ЛАБИ) -->
+          <tr>
+            <td class="date">12.09</td>
+            <td class="empty"></td>
+            <td><div class="pill lab"><b>ООП C#</b> (Лб)<br><span class="muted">ауд. 221 · Чернявський Ж.А.</span></div></td>
+            <td><div class="pill lab"><b>Аналіз вимог до ПЗ</b> (Лб)<br><span class="muted">ауд. 325 · Сватко В.В.</span></div></td>
+            <td class="empty"></td>
+          </tr>
+
+          <!-- 15.09 (ЛЕКЦІЇ) -->
+          <tr>
+            <td class="date">15.09</td>
+            <td><div class="pill lecture"><b>Вища математика</b> (Лк)<br><span class="muted">Дистанційно · Білоусова С.В.</span></div></td>
+            <td><div class="pill lecture"><b>Інноваційне підприємництво</b> (Лк)<br><span class="muted">Дистанційно · Бажан Т.О.</span></div></td>
+            <td><div class="pill lecture"><b>WEB-технології</b> (Лк)<br><span class="muted">Дистанційно · Дзюба В.В.</span></div></td>
+            <td class="empty"></td>
+          </tr>
+
+          <!-- 16.09 (ПРАКТИЧНІ) -->
+          <tr>
+            <td class="date">16.09</td>
+            <td><div class="pill practice"><b>Інноваційне підприємництво</b> (Пз)<br><span class="muted">ауд. 329 · Бажан Т.О.</span></div></td>
+            <td><div class="pill practice"><b>Вища математика</b> (Пз)<br><span class="muted">ауд. 501 · Варшамов А.В.</span></div></td>
+            <td><div class="pill practice"><b>Іноземна мова</b> (Пз)<br><span class="muted">ауд. 329 · Донцова О.С.</span></div></td>
+            <td class="empty"></td>
+          </tr>
+
+          <!-- 17.09 (ЛАБИ) -->
+          <tr>
+            <td class="date">17.09</td>
+            <td class="empty"></td>
+            <td><div class="pill lab"><b>WEB-технології</b> (Лб)<br><span class="muted">ауд. 512 · Дзюба В.В.</span></div></td>
+            <td><div class="pill lab"><b>Аналіз вимог до ПЗ</b> (Лб)<br><span class="muted">ауд. 225 · Сватко В.В.</span></div></td>
+            <td class="empty"></td>
+          </tr>
+
+          <!-- 22.09 (ЛЕКЦІЇ) -->
+          <tr>
+            <td class="date">22.09</td>
+            <td><div class="pill lecture"><b>ООП C#</b> (Лк)<br><span class="muted">Дистанційно · Чернявський Ж.А.</span></div></td>
+            <td><div class="pill lecture"><b>Аналіз вимог до ПЗ</b> (Лк)<br><span class="muted">Дистанційно · Сватко В.В.</span></div></td>
+            <td><div class="pill lecture"><b>Українська мова</b> (Лк)<br><span class="muted">Дистанційно · Даниленко Л.В.</span></div></td>
+            <td><div class="pill lecture"><b>Філософія</b> (Лк)<br><span class="muted">Дистанційно</span></div></td>
+          </tr>
+
+          <!-- 23.09 (ПРАКТИЧНІ) -->
+          <tr>
+            <td class="date">23.09</td>
+            <td><div class="pill practice"><b>Інноваційне підприємництво</b> (Пз)<br><span class="muted">ауд. 329 · Бажан Т.О.</span></div></td>
+            <td><div class="pill practice"><b>Вища математика</b> (Пз)<br><span class="muted">ауд. 501 · Варшамов А.В.</span></div></td>
+            <td><div class="pill practice"><b>Іноземна мова</b> (Пз)<br><span class="muted">ауд. 329 · Донцова О.С.</span></div></td>
+            <td class="empty"></td>
+          </tr>
+
+          <!-- 24.09 (ЛАБИ) -->
+          <tr>
+            <td class="date">24.09</td>
+            <td class="empty"></td>
+            <td><div class="pill lab"><b>WEB-технології</b> (Лб)<br><span class="muted">ауд. 211 · Дзюба В.В.</span></div></td>
+            <td><div class="pill lab"><b>Вища математика</b> (Лб)<br><span class="muted">ауд. 517 · Шкапа В.В.</span></div></td>
+            <td class="empty"></td>
+          </tr>
+
+          <!-- 26.09 (ЛАБИ) -->
+          <tr>
+            <td class="date">26.09</td>
+            <td class="empty"></td>
+            <td><div class="pill lab"><b>ООП C#</b> (Лб)<br><span class="muted">ауд. 221 · Чернявський Ж.А.</span></div></td>
+            <td><div class="pill lab"><b>Аналіз вимог до ПЗ</b> (Лб)<br><span class="muted">ауд. 325 · Сватко В.В.</span></div></td>
+            <td class="empty"></td>
+          </tr>
+
+          <!-- 29.09 (ЛЕКЦІЇ) -->
+          <tr>
+            <td class="date">29.09</td>
+            <td><div class="pill lecture"><b>Вища математика</b> (Лк)<br><span class="muted">Дистанційно · Білоусова С.В.</span></div></td>
+            <td><div class="pill lecture"><b>Інноваційне підприємництво</b> (Лк)<br><span class="muted">Дистанційно · Бажан Т.О.</span></div></td>
+            <td><div class="pill lecture"><b>WEB-технології</b> (Лк)<br><span class="muted">Дистанційно · Дзюба В.В.</span></div></td>
+            <td class="empty"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  <footer>© 2025 Гнетило Іван</footer>
+</body>
+</html>

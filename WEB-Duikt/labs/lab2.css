@@ -1,0 +1,64 @@
+p:first-of-type {
+  font-weight: bold;
+}
+
+a:last-child {
+  color: red;
+}
+
+input[disabled] {
+  background-color: #ccc;
+}
+
+div p {
+  font-size: 16px;
+}
+
+div > p {
+  font-size: 12px;
+}
+
+a[href^="https"] {
+  color: green;
+}
+
+input[type="text"] {
+  border: 1px solid blue;
+}
+
+h1:first-child,
+h1:last-child {
+  font-size: 24px;
+}
+
+input:checked {
+  background-color: lightblue;
+}
+
+* > a {
+  text-decoration: underline;
+}
+
+* > h2 {
+  font-weight: bold;
+}
+
+input[type="text"]:not(:disabled) {
+  background-color: yellow;
+}
+
+p:first-child {
+  font-size: 24px;
+}
+
+.special + li {
+  text-decoration: line-through;
+}
+
+p::first-letter {
+  font-size: 36px;
+}
+
+a::after {
+  content: "/";
+}

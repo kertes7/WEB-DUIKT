@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Лабораторна робота №3 — Flexbox YouTube</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="lab3.css">
+</head>
+<body>
+  <div class="page">
+
+    <aside class="sidebar">
+      <div class="logo-row">
+        <div class="burger">☰</div>
+        <div class="yt-logo">YouTube</div>
+      </div>
+
+      <div class="sidebar-section">
+        <h3>Головне</h3>
+        <nav>
+          <a href="#" class="nav-item active">Головна</a>
+          <a href="#" class="nav-item">Shorts</a>
+          <a href="#" class="nav-item">Підписки</a>
+          <a href="#" class="nav-item">YouTube Music</a>
+        </nav>
+      </div>
+
+      <div class="sidebar-section">
+        <h3>Ви</h3>
+        <nav>
+          <a href="#" class="nav-item">Ваш канал</a>
+          <a href="#" class="nav-item">Історія</a>
+          <a href="#" class="nav-item">Ваші відео</a>
+          <a href="#" class="nav-item">Переглянути пізніше</a>
+        </nav>
+      </div>
+
+      <div class="sidebar-section">
+        <h3>Підписки</h3>
+        <nav>
+          <a href="#" class="nav-item">Канал 1</a>
+          <a href="#" class="nav-item">Канал 2</a>
+          <a href="#" class="nav-item">Канал 3</a>
+          <a href="#" class="nav-item">Показати ще</a>
+        </nav>
+      </div>
+    </aside>
+
+    <div class="content">
+      <header class="topbar">
+        <div class="topbar-left">
+          <span class="yt-premium">YouTube Premium</span>
+        </div>
+        <div class="topbar-center">
+          <input type="text" placeholder="Пошук">
+          <button>🔍</button>
+        </div>
+        <div class="topbar-right">
+          <button class="icon-btn">⬤</button>
+          <button class="icon-btn">🔔</button>
+          <button class="avatar">І</button>
+        </div>
+      </header>
+
+      <nav class="chips">
+        <button class="chip active">Усі</button>
+        <button class="chip">Ігри</button>
+        <button class="chip">Музика</button>
+        <button class="chip">Прямі трансляції</button>
+        <button class="chip">Новини</button>
+        <button class="chip">Технології</button>
+        <button class="chip">Навчання</button>
+        <button class="chip">Подкасти</button>
+      </nav>
+
+      <main class="videos">
+        <!-- 1 -->
+        <article class="video-card">
+          <div class="thumb">
+            <img src="../image/yt1.jpg" alt="Прев’ю відео 1">
+          </div>
+          <div class="video-info">
+            <h3 class="video-title">Що таке Flexbox?</h3>
+            <p class="video-meta">Канал про веб · 25 тис. переглядів · 1 день тому</p>
+          </div>
+        </article>
+
+        <!-- 2 -->
+        <article class="video-card">
+          <div class="thumb">
+            <img src="../image/yt2.jpg" alt="Прев’ю відео 2">
+          </div>
+          <div class="video-info">
+            <h3 class="video-title">Український YouTube сьогодні</h3>
+            <p class="video-meta">UA Media · 120 тис. переглядів · 3 дні тому</p>
+          </div>
+        </article>
+
+        <!-- 3 -->
+        <article class="video-card">
+          <div class="thumb">
+            <img src="../image/yt3.jpg" alt="Прев’ю відео 3">
+          </div>
+          <div class="video-info">
+            <h3 class="video-title">JS для початківців</h3>
+            <p class="video-meta">CodeSchool · 90 тис. переглядів · 2 тижні тому</p>
+          </div>
+        </article>
+
+        <!-- 4 -->
+        <article class="video-card">
+          <div class="thumb">
+            <img src="../image/yt4.jpg" alt="Прев’ю відео 4">
+          </div>
+          <div class="video-info">
+            <h3 class="video-title">Влог: день студента</h3>
+            <p class="video-meta">Student Vlog · 11 тис. переглядів · 5 год тому</p>
+          </div>
+        </article>
+
+        <!-- 5 -->
+        <article class="video-card">
+          <div class="thumb">
+            <img src="../image/yt5.jpg" alt="Прев’ю відео 5">
+          </div>
+          <div class="video-info">
+            <h3 class="video-title">React за 10 хвилин</h3>
+            <p class="video-meta">DevUA · 40 тис. переглядів · 4 дні тому</p>
+          </div>
+        </article>
+
+        <!-- 6 -->
+        <article class="video-card">
+          <div class="thumb">
+            <img src="../image/yt6.jpg" alt="Прев’ю відео 6">
+          </div>
+          <div class="video-info">
+            <h3 class="video-title">Музика для фокусу</h3>
+            <p class="video-meta">LoFi Beats · 1,2 млн переглядів · 1 рік тому</p>
+          </div>
+        </article>
+
+        <!-- 7 -->
+        <article class="video-card">
+          <div class="thumb">
+            <img src="../image/yt7.jpg" alt="Прев’ю відео 7">
+          </div>
+          <div class="video-info">
+            <h3 class="video-title">Як працює Git?</h3>
+            <p class="video-meta">GitLab UA · 18 тис. переглядів · 2 тижні тому</p>
+          </div>
+        </article>
+
+        <!-- 8 -->
+        <article class="video-card">
+          <div class="thumb">
+            <img src="../image/yt8.jpg" alt="Прев’ю відео 8">
+          </div>
+          <div class="video-info">
+            <h3 class="video-title">Типовий день розробника</h3>
+            <p class="video-meta">DevLife · 55 тис. переглядів · 6 год тому</p>
+          </div>
+        </article>
+
+        <!-- 9 -->
+        <article class="video-card">
+          <div class="thumb">
+            <img src="../image/yt9.jpg" alt="Прев’ю відео 9">
+          </div>
+          <div class="video-info">
+            <h3 class="video-title">TOP 10 VS Code розширень</h3>
+            <p class="video-meta">ToolsUA · 32 тис. переглядів · 1 тиждень тому</p>
+          </div>
+        </article>
+
+        <!-- 10 -->
+        <article class="video-card">
+          <div class="thumb">
+            <img src="../image/yt10.jpg" alt="Прев’ю відео 10">
+          </div>
+          <div class="video-info">
+            <h3 class="video-title">Створюємо сайт за 1 годину</h3>
+            <p class="video-meta">FastWeb · 65 тис. переглядів · 2 тижні тому</p>
+          </div>
+        </article>
+
+        <!-- 11 -->
+        <article class="video-card">
+          <div class="thumb">
+            <img src="../image/yt11.jpg" alt="Прев’ю відео 11">
+          </div>
+          <div class="video-info">
+            <h3 class="video-title">Як вчити англійську з відео</h3>
+            <p class="video-meta">LinguaUA · 80 тис. переглядів · 3 тижні тому</p>
+          </div>
+        </article>
+
+        <!-- 12 -->
+        <article class="video-card">
+          <div class="thumb">
+            <img src="../image/yt12.jpg" alt="Прев’ю відео 12">
+          </div>
+          <div class="video-info">
+            <h3 class="video-title">Productivity лайфхаки</h3>
+            <p class="video-meta">FocusPro · 200 тис. переглядів · 2 місяці тому</p>
+          </div>
+        </article>
+      </main>
+    </div>
+
+  </div>
+</body>
+</html>

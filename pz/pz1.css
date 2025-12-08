@@ -1,0 +1,129 @@
+/* ===== БАЗОВІ СТИЛІ ===== */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0d1117;
+  color: #e6edf3;
+}
+
+header {
+  text-align: center;
+  padding: 20px 10px;
+  background: #11161d;
+  border-bottom: 2px solid #1f2a37;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+header p {
+  margin: 5px 0 0;
+  font-size: 16px;
+  opacity: 0.7;
+}
+
+/* ===== ЛЕГЕНДА ===== */
+.legend {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.badge {
+  display: inline-block;
+  padding: 6px 12px;
+  margin: 5px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.badge-lecture {
+  background: #1e90ff33;
+  border: 1px solid #1e90ff;
+}
+
+.badge-practice {
+  background: #32cd3233;
+  border: 1px solid #32cd32;
+}
+
+.badge-lab {
+  background: #ff8c0033;
+  border: 1px solid #ff8c00;
+}
+
+/* ===== ТАБЛИЦЯ ===== */
+.schedule-container {
+  width: 95%;
+  margin: 0 auto 40px;
+  overflow-x: auto;
+}
+
+.schedule-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #161b22;
+}
+
+.schedule-table th,
+.schedule-table td {
+  border: 1px solid #2a3441;
+  padding: 10px;
+  text-align: center;
+  vertical-align: top;
+}
+
+.schedule-table th {
+  background: #1f2731;
+  font-size: 15px;
+}
+
+.date {
+  font-weight: bold;
+  background: #1f2731;
+}
+
+.empty {
+  background: #11161d;
+}
+
+/* ===== ПРЕДМЕТИ ===== */
+.pill {
+  padding: 6px 10px;
+  margin: 4px 0;
+  border-radius: 6px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.lecture {
+  background: #1e90ff33;
+  border-left: 4px solid #1e90ff;
+}
+
+.practice {
+  background: #32cd3233;
+  border-left: 4px solid #32cd32;
+}
+
+.lab {
+  background: #ff8c0033;
+  border-left: 4px solid #ff8c00;
+}
+
+.muted {
+  opacity: 0.65;
+  font-size: 12px;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #11161d;
+  border-top: 2px solid #1f2a37;
+  margin-top: 40px;
+  color: #aaa;
+}

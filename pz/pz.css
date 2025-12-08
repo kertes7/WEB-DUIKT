@@ -61,7 +61,7 @@ body {
   text-transform: uppercase;
 }
 
-/* навігація – 1в1 як на головній */
+/* навігація */
 
 .topnav ul {
   display: flex;
@@ -74,7 +74,7 @@ body {
 
 .topnav a {
   position: relative;
-  color: #ffffff;
+  color: #fff;
   text-decoration: none;
   padding: 6px 12px;
   border-radius: 999px;
@@ -82,6 +82,8 @@ body {
   font-weight: 500;
   transition: background 0.25s ease, color 0.25s ease, transform 0.2s ease;
 }
+
+/* underline */
 
 .topnav a::after {
   content: "";
@@ -107,7 +109,7 @@ body {
   transform: scaleX(1);
 }
 
-/* основний контент */
+/* ======= Заголовок сторінки ПЗ ======= */
 
 .main {
   max-width: 1100px;
@@ -115,15 +117,13 @@ body {
   padding: 40px 16px 48px;
 }
 
-/* ==== PRACTICALS PAGE ==== */
-
 .pz-header {
+  margin-bottom: 24px;
   text-align: center;
-  margin-bottom: 22px;
 }
 
 .pz-header h1 {
-  margin: 0 0 6px;
+  margin-bottom: 8px;
 }
 
 .pz-header p {
@@ -131,23 +131,28 @@ body {
   color: #e1f5ff;
 }
 
-/* картки практичних – одна широка в ряд */
+/* ======= Картки ПЗ ======= */
 
 .pz-list {
   display: flex;
   flex-direction: column;
   gap: 20px;
   align-items: center;
+  margin-top: 20px;
 }
 
 .pz-card {
   width: 100%;
   max-width: 780px;
   background: rgba(0, 0, 0, 0.55);
+  padding: 22px 24px;
   border-radius: 18px;
-  padding: 20px 22px;
   border: 1px solid rgba(255, 255, 255, 0.18);
-  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.4);
+
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .pz-card h2 {
@@ -156,13 +161,16 @@ body {
 }
 
 .pz-card p {
-  margin: 6px 0 12px;
+  margin: 0;
   color: #d8f2ff;
 }
 
-/* кнопка – стилем як primary на головній */
+/* ======= Кнопка ======= */
 
 .btn {
+  margin-top: 10px;
+  align-self: flex-start;
+
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -185,7 +193,7 @@ body {
   box-shadow: 0 12px 30px rgba(0, 198, 255, 0.52);
 }
 
-/* футер – як на головній */
+/* футер */
 
 .site-footer {
   border-top: 1px solid rgba(255, 255, 255, 0.16);
@@ -193,9 +201,9 @@ body {
 }
 
 .footer-inner {
-  padding: 12px 16px;
-  font-size: 0.85rem;
+  padding: 12px;
   text-align: center;
+  font-size: 0.85rem;
   color: #d0e4f0;
 }
 

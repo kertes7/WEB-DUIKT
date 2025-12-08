@@ -1,4 +1,4 @@
-p:first-of-type {
+ul li:first-child {
   font-weight: bold;
 }
 
@@ -6,7 +6,7 @@ a:last-child {
   color: red;
 }
 
-input[disabled] {
+input:disabled {
   background-color: #ccc;
 }
 
@@ -15,7 +15,7 @@ div p {
 }
 
 div > p {
-  font-size: 12px;
+  font-weight: bold;
 }
 
 a[href^="https"] {
@@ -26,8 +26,8 @@ input[type="text"] {
   border: 1px solid blue;
 }
 
-h1:first-child,
-h1:last-child {
+li:first-child,
+li:last-child {
   font-size: 24px;
 }
 
@@ -35,16 +35,16 @@ input:checked {
   background-color: lightblue;
 }
 
-* > a {
+li > a {
   text-decoration: underline;
 }
 
-* > h2 {
+li:nth-child(even) {
   font-weight: bold;
 }
 
 input[type="text"]:not(:disabled) {
-  background-color: yellow;
+  background-color: #e0e0e0; /* світло-сірий */
 }
 
 p:first-child {
@@ -60,5 +60,5 @@ p::first-letter {
 }
 
 a::after {
-  content: "/";
+  content: "↗";
 }

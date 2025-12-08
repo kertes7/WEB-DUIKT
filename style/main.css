@@ -227,20 +227,15 @@ body {
 }
 
 .photo-circle {
-  width: 160px;
-  height: 160px;
+  width: 110px;
+  height: 110px;
   border-radius: 999px;
-
-  background-image: url("/image/ava.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
+  background: url("../image/ava.jpg") center/cover no-repeat;
   border: 3px solid #00c6ff;
   box-shadow: 0 10px 30px rgba(0, 198, 255, 0.5);
-
   align-self: center;
 }
+
 
 
 .photo-info {

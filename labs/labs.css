@@ -11,15 +11,12 @@ body {
   line-height: 1.6;
 }
 
-/* контейнер */
 
 .container {
   max-width: 1100px;
   margin: 0 auto;
   padding: 0 16px;
 }
-
-/* шапка */
 
 .site-header {
   border-bottom: 1px solid rgba(255, 255, 255, 0.12);
@@ -61,7 +58,6 @@ body {
   text-transform: uppercase;
 }
 
-/* навігація – 1в1 як на головній */
 
 .topnav ul {
   display: flex;
@@ -83,7 +79,6 @@ body {
   transition: background 0.25s ease, color 0.25s ease, transform 0.2s ease;
 }
 
-/* лінія під активним пунктом */
 
 .topnav a::after {
   content: "";
@@ -109,7 +104,6 @@ body {
   transform: scaleX(1);
 }
 
-/* заголовок сторінки */
 
 .main {
   max-width: 1100px;
@@ -131,13 +125,12 @@ body {
   color: #e1f5ff;
 }
 
-/* ---- ВИРІВНЮВАННЯ КАРТОК ЛР ---- */
 
 .labs-row {
   display: flex;
-  flex-direction: column;   /* одна картка в ряд */
+  flex-direction: column;   
   gap: 20px;
-  align-items: center;      /* центруємо по ширині */
+  align-items: center;     
   margin-top: 20px;
 }
 
@@ -165,7 +158,6 @@ body {
   color: #d8f2ff;
 }
 
-/* кнопка – як primary на головній */
 
 .btn {
   margin-top: 10px;
@@ -193,7 +185,6 @@ body {
   box-shadow: 0 12px 30px rgba(0, 198, 255, 0.52);
 }
 
-/* футер */
 
 .site-footer {
   border-top: 1px solid rgba(255, 255, 255, 0.16);
@@ -207,7 +198,6 @@ body {
   color: #d0e4f0;
 }
 
-/* адаптив */
 
 @media (max-width: 640px) {
   .header-inner {

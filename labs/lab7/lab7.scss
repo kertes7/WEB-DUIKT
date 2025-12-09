@@ -1,0 +1,131 @@
+$bg-primary: #1a1a2e;
+$bg-secondary: #16213e;
+$text-color: #ffffff;
+$tree-color: #2ecc71;
+$star-color: #f1c40f;
+$font-stack: "Mountains of Christmas", cursive;
+
+@mixin center-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: radial-gradient(circle, $bg-secondary 0%, $bg-primary 100%);
+  font-family: $font-stack;
+  @include center-flex;
+  overflow: hidden;
+}
+
+.card {
+  text-align: center;
+  color: $text-color;
+  position: relative;
+
+  &__title {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    animation: glow 2s infinite alternate;
+  }
+
+  &__text {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    opacity: 0.9;
+  }
+
+  &__scene {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.1); 
+    border-radius: 50%;
+    @include center-flex;
+    flex-direction: column;
+  }
+}
+
+.tree {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__star {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 20px solid $star-color;
+    position: relative;
+    margin-bottom: -5px;
+    z-index: 5;
+    animation: spin 3s linear infinite;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 6px;
+      left: -10px;
+      width: 0;
+      height: 0;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-top: 20px solid $star-color;
+    }
+  }
+
+  &__layer {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 70px solid $tree-color;
+    margin-top: -20px;
+
+    &--top {
+      border-bottom-color: lighten($tree-color, 10%);
+      transform: scale(0.8);
+      z-index: 3;
+    }
+
+    &--middle {
+      transform: scale(1);
+      z-index: 2;
+    }
+
+    &--bottom {
+      border-bottom-color: darken($tree-color, 10%);
+      transform: scale(1.2);
+      z-index: 1;
+    }
+  }
+
+  &__log {
+    width: 20px;
+    height: 30px;
+    background: #795548;
+    margin-top: -5px;
+  }
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff;
+  }
+  to {
+    text-shadow: 0 0 20px #ff00de, 0 0 30px #ff00de;
+  }
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}

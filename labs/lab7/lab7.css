@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: radial-gradient(circle, #16213e 0%, #1a1a2e 100%);
+  font-family: "Mountains of Christmas", cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.card {
+  text-align: center;
+  color: #ffffff;
+  position: relative;
+}
+.card__title {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  animation: glow 2s infinite alternate;
+}
+.card__text {
+  font-size: 1.5rem;
+  margin-top: 20px;
+  opacity: 0.9;
+}
+.card__scene {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.tree {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tree__star {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 20px solid #f1c40f;
+  position: relative;
+  margin-bottom: -5px;
+  z-index: 5;
+  animation: spin 3s linear infinite;
+}
+.tree__star::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: -10px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 20px solid #f1c40f;
+}
+.tree__layer {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 70px solid #2ecc71;
+  margin-top: -20px;
+}
+.tree__layer--top {
+  border-bottom-color: rgb(84.456, 216.544, 140.468);
+  transform: scale(0.8);
+  z-index: 3;
+}
+.tree__layer--middle {
+  transform: scale(1);
+  z-index: 2;
+}
+.tree__layer--bottom {
+  border-bottom-color: rgb(36.616, 162.384, 89.948);
+  transform: scale(1.2);
+  z-index: 1;
+}
+.tree__log {
+  width: 20px;
+  height: 30px;
+  background: #795548;
+  margin-top: -5px;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff;
+  }
+  to {
+    text-shadow: 0 0 20px #ff00de, 0 0 30px #ff00de;
+  }
+}
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}/*# sourceMappingURL=lab7.css.map */

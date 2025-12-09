@@ -96,7 +96,6 @@ body {
   justify-content: space-between;
 }
 
-/* sidebar */
 
 .sidebar {
   grid-area: sidebar;
@@ -145,7 +144,6 @@ body {
   border-bottom-style: solid;
 }
 
-/* right column days container uses same grid areas */
 
 .days {
   display: contents;
@@ -178,8 +176,6 @@ body {
   outline: none;
 }
 
-/* map days to grid areas */
-
 .day-mon { grid-area: mon; }
 .day-tue { grid-area: tue; }
 .day-wed { grid-area: wed; }
@@ -188,14 +184,12 @@ body {
 .day-sat { grid-area: sat; }
 .day-sun { grid-area: sun; }
 
-/* чекбокси та інпути */
 
 input[type="checkbox"] {
   width: 12px;
   height: 12px;
 }
 
-/* responsive */
 
 @media (max-width: 1000px) {
   .planner {

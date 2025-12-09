@@ -11,7 +11,6 @@ body {
   line-height: 1.6;
 }
 
-/* контейнер */
 
 .container {
   max-width: 1100px;
@@ -19,7 +18,6 @@ body {
   padding: 0 16px;
 }
 
-/* шапка */
 
 .site-header {
   border-bottom: 1px solid rgba(255, 255, 255, 0.12);
@@ -61,7 +59,6 @@ body {
   text-transform: uppercase;
 }
 
-/* навігація */
 
 .topnav ul {
   display: flex;
@@ -83,7 +80,6 @@ body {
   transition: background 0.25s ease, color 0.25s ease, transform 0.2s ease;
 }
 
-/* underline */
 
 .topnav a::after {
   content: "";
@@ -109,7 +105,6 @@ body {
   transform: scaleX(1);
 }
 
-/* ======= Заголовок сторінки ПЗ ======= */
 
 .main {
   max-width: 1100px;
@@ -131,7 +126,6 @@ body {
   color: #e1f5ff;
 }
 
-/* ======= Картки ПЗ ======= */
 
 .pz-list {
   display: flex;
@@ -165,7 +159,6 @@ body {
   color: #d8f2ff;
 }
 
-/* ======= Кнопка ======= */
 
 .btn {
   margin-top: 10px;
@@ -193,7 +186,6 @@ body {
   box-shadow: 0 12px 30px rgba(0, 198, 255, 0.52);
 }
 
-/* футер  */
 
 .site-footer {
   border-top: 1px solid rgba(255, 255, 255, 0.16);
@@ -207,7 +199,6 @@ body {
   color: #d0e4f0;
 }
 
-/* адаптив */
 
 @media (max-width: 640px) {
   .header-inner {
